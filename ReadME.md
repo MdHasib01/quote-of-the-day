@@ -12,3 +12,5 @@ A quote genetating, sharing & exporting web application.
 ## Live Link:
 
 [https://quotes-generator-02.netlify.app/](https://quotes-generator-02.netlify.app/)
+![image](https://github.com/user-attachments/assets/258612f6-66fd-4d1f-9a00-d5d8a0f93fbb)
+
