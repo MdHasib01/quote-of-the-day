@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote of the Day</title>
+    <!-- --------- Tailwind CDN ------------  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- =============== fontawsome cdn ================  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+
+  <body class="bg-gray-200 p-4">
+    <div class="container bg-white mx-auto max-w-4xl rounded rounded-lg">
+      <nav class="flex justify-center bg-blue-500 p-4 rounded-t-lg">
+        <h1 class="text-2xl font-bold text-white">Quote of the Day</h1>
+      </nav>
+      <main>
+        <div id='canvas'
+          style="background-image: url('./assets/bg-01.jpeg')"
+          class="p-4 bg-no-repeat bg-cover"
+        >
+          <div  class="my-20">
+            <q id="quote" class="text-2xl font-bold text-white italic"
+              >I hope we shall crush in its birth the aristocracy of our monied
+              corporations which dare already to challenge our government to a
+              trial by strength, and bid defiance to the laws of our country.</q
+            >
+            <span id='author' class="block text-white text-right">- Thomas Jefferson</span>
+          </div>
+        </div>
+        <div class="p-4">
+          <button id="new_quote_button"
+            class="bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded rounded-lg font-semibold text-white"
+          >
+            <i class="fa fa-refresh" aria-hidden="true"></i> New Quote
+          </button>
+          <button id="copy_to_clipboard"
+            class="bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded rounded-lg font-semibold text-white"
+          >
+            <i class="fa fa-clipboard" aria-hidden="true"></i> Copy to Cliboard
+          </button>
+          <button id="share_on_twitter"
+            class="bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded rounded-lg font-semibold text-white"
+          >
+          <i class="fa fa-share-alt" aria-hidden="true"></i> Share on twitter
+          </button>
+          <button id="export_btn"
+          class="bg-blue-500 hover:bg-blue-400 px-4 py-2 rounded rounded-lg font-semibold text-white"
+          >
+          <i class="fa fa-image" aria-hidden="true"></i> Export
+        </button> 
+       <div class="flex mt-4">
+         <div >
+          <label for="select_bg" class="block text-sm font-medium text-gray-700">Select Background</label>
+          <input id="select_bg" type="file" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-500 file:text-white hover:file:bg-blue-400">
+        </div>
+        <div>
+          <label for="select_color" class="block text-sm font-medium text-gray-700">Select Background</label>
+          <input id="text_color" type="color">
+        </div>
+       </div>
+        </div>
+      </main>
+
+      <footer class="text-center text-gray-600 ">
+        &copy; 2025 All rights reversed to Hasib
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
